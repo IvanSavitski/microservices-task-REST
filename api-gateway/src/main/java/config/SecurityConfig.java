@@ -1,4 +1,4 @@
-package config;
+/*package config;
 
 
 import org.springframework.context.annotation.Bean;
@@ -23,9 +23,8 @@ public class SecurityConfig {
                                 .permitAll()
                                 .anyExchange()
                                 .authenticated())
-                /*.oauth2ResourceServer(ServerHttpSecurity.OAuth2ResourceServerSpec::jwt);
-                .oauth2ResourceServer(oauth2 -> oauth2.jwt(withDefaults()));*/
+
                 .oauth2ResourceServer((oauth2) -> oauth2.jwt(Customizer.withDefaults()));
         return serverHttpSecurity.build();
     }
-}
+}*/
